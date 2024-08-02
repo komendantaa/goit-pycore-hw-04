@@ -7,7 +7,7 @@ def get_cats_info(path: str) -> list[dict[str, str]]:
         result = []
         for line in file.readlines():
             id, name, age = line.strip().split(",")
-            result.append({id, name, age})
+            result.append({"id": id, "name": name, "age": age})
         return result
 
 
